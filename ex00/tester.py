@@ -7,7 +7,7 @@
 # print(apply_limit(bmi, 26))
 
 
-# My own tests for the exercise
+# My own tests for the exercise:
 
 from give_bmi import give_bmi, apply_limit
 
