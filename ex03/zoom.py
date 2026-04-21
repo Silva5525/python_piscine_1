@@ -104,19 +104,3 @@ def display_image(array: np.ndarray) -> None:
 
     # Show the image window.
     plt.show()
-
-
-def main() -> None:
-    """Load the image, zoom into it, and display the result."""
-    # Load the original image from the file.
-    image = ft_load("animal.jpeg")
-
-    # Create the grayscale cropped version.
-    zoomed = ft_zoom(image)
-
-    # Display the final zoomed image.
-    display_image(zoomed)
-
-
-if __name__ == "__main__":
-    main()

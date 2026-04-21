@@ -78,12 +78,3 @@ def ft_load(path: str) -> np.ndarray | None:
         print(f"Error: '{path}' is not a valid image file")
 
     return None
-
-
-def main() -> None:
-    """Run a simple test for exercise 02."""
-    ft_load("landscape.jpg")
-
-
-if __name__ == "__main__":
-    main()

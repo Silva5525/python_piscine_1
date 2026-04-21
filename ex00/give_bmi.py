@@ -109,20 +109,3 @@ def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
     except (TypeError, ValueError) as error:
         print(f"{type(error).__name__}: {error}")
         return []
-
-
-# main() is only used here for a simple local test.
-# It shows how the functions behave with the example values
-# from the subject.
-def main() -> None:
-    """Run a simple test for exercise 00."""
-    height = [2.71, 1.15]
-    weight = [165.3, 38.4]
-
-    bmi = give_bmi(height, weight)
-    print(bmi, type(bmi))
-    print(apply_limit(bmi, 26))
-
-
-if __name__ == "__main__":
-    main()

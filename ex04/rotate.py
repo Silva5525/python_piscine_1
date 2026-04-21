@@ -160,36 +160,3 @@ def display_image(array: np.ndarray) -> None:
 
     # Show the image window.
     plt.show()
-
-
-def main() -> None:
-    """Load, crop, transpose, print, and display the image."""
-    try:
-        # Load the original image from the file.
-        image = ft_load("animal.jpeg")
-
-        # Convert the image to greyscale.
-        grey = to_greyscale(image)
-
-        # Cut a centered square from the image.
-        square = crop_square(grey, 400)
-
-        # Print the shape and the pixel values before the transpose.
-        print(f"The shape of image is: {square.shape}")
-        print(square)
-
-        # Transpose the square image manually.
-        transposed = manual_transpose(square)
-
-        # Print the new shape and pixel values after the transpose.
-        print(f"New shape after Transpose: {transposed.shape}")
-        print(transposed)
-
-        # Display the final transposed image.
-        display_image(transposed)
-    except (TypeError, ValueError) as error:
-        print(f"{type(error).__name__}: {error}")
-
-
-if __name__ == "__main__":
-    main()

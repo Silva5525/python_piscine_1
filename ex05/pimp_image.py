@@ -46,7 +46,6 @@ def _validate_image(array: np.ndarray) -> None:
 
 
 def ft_invert(array: np.ndarray) -> np.ndarray | None:
-    
     """Invert the colors of the image received.
 
     Parameters:
@@ -57,7 +56,6 @@ def ft_invert(array: np.ndarray) -> np.ndarray | None:
         The color-inverted image.
         None if an error occurs.
     """
-    
     try:
         # Validate that the image has the correct format.
         _validate_image(array)
